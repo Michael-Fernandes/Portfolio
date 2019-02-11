@@ -43,8 +43,8 @@
     "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "build": "babel src -d lib",
-    "start": "webpack",
+    "babel": "babel src -d lib",
+    "build": "webpack",
     "start:dev": "webpack-dev-server"
   }
 }

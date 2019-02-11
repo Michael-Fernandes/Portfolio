@@ -175,7 +175,7 @@ header>ul{
 	clear: both;
 	max-height: 550px;
 	padding: 20px;
-	margin-top:50px;
+	margin-top:30px;
 	overflow: hidden;
 }
 
@@ -219,6 +219,12 @@ header>ul{
 	padding: 40px;
 }
 
+.web-app-wrapper > *{
+	display: flex;
+	justify-content: center;
+	align-items: middle;
+}
+
 /* description */
 .product-description-staggered, .product-description-bottom{
 	max-width: 400px;
@@ -234,6 +240,11 @@ header>ul{
 .product-description-middle, .product-description-top{
 	position: absolute;
 	max-width:445px;
+}
+
+.description-overview > p {
+	margin: 5px 0 0 0;
+	font-size: 1em !IMPORTANT;
 }
 
 .product-black{
@@ -321,6 +332,7 @@ header>ul{
 	margin:0 auto 0 auto;
 }
 
+
 .link{
 	position: relative;
   color: #000;
@@ -358,15 +370,16 @@ header>ul{
 
 .sq-button{
 	border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: #FFFFFF;
+    background-color: white;
+    border: 2px solid black;
+	color: #FFFFFF;
+	cursor: pointer;
+	display:inline-block;
+	font-size: 12px;
     text-align: center;
-    font-size: 12px;
-    padding: 10px 10px 10px;
+    padding: 5px 5px 5px;
     width: 100px;
     transition: all 0.5s;
-    cursor: pointer;
     margin-bottom: 10px;
 }
 
@@ -457,7 +470,7 @@ figcaption {
   	transition: opacity 0.3s ease-in-out;
 }
 
-/*
+
 .caid-button{
 	background-color: orange;
 	border: 2px solid orange;
@@ -507,7 +520,7 @@ figcaption {
 .volunteer{
 	color:#302e2d !important;
 }
-*/
+
 
 /* It's a hack!... to allow for staggerd left */
 @media (max-width:895px){
@@ -720,12 +733,13 @@ figcaption {
 	margin: 8px;
 }
 
-.nav-link, .portfolio-selector>li{
+.nav-link, .portfolio-selector>li, .nav-right-writeup{
 	color:#302e2d;
+	font-size: 1.1em;
 	text-decoration: none;
 }
-.nav-link:hover{
-	cursor: hand;
+.nav-link:hover, .nav-left-writeup, .nav-right-writeup{
+	cursor: pointer;
 	color: steelblue;
 }
 

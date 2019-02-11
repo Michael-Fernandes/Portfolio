@@ -8,7 +8,7 @@
 .box{
 	background-color: #D6CEC1;
 	width: 100%;
-	padding-top: 10vh;
+	padding-top: 15vh;
 	padding-bottom: 10vh;
 }
 
@@ -20,6 +20,7 @@
 .svg-wrapper>svg{
 	display:block;
 	width: 100%;
+	margin-top:10%;
 }
 
 #navbar{
@@ -63,11 +64,11 @@
 	color: black;
 }
 
-.nav-left{
+.nav-left, .nav-left-writeup{
 	float: left;
 }
 
-.nav-right{
+.nav-right, .nav-right-writeup{
 	float: right;
 }
 
@@ -393,9 +394,13 @@ h3{
 		display: none;
 	}
 
+	.box{
+		padding:0;
+	}
+
 	.svg-wrapper{
+		margin: 0 auto 0 -7.5%;
 		min-width: 100%;
-		margin:-5%;
 	}
 }
 
