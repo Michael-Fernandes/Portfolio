@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <script src="./js/bundle.js"></script>
+  <script src="./js/vendor~main.bundle.js"></script>
 
   <meta charset="utf-8">
-  <title> Michael Fernandes | UX </title>
+  <title> Michael Fernandes | Portfolio </title>
 
   <meta name="author" content="Michael Fernandes" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -18,6 +19,14 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-73790222-1');
+		var trackClickedLink = function(url) {
+		gtag('event', 'click', {
+			'event_category': 'clickedLink',
+			'event_label': url,
+			'transport_type': 'inbound',
+			'event_callback': function(){document.location = url;}
+	    });
+}
 
 	</script>
 	
@@ -36,8 +45,18 @@
 	<div id="navbar">
 		<div class="nav-color blue"></div>
 		<div class="nav-color orange"></div>
-		<div class="nav-left nav-text"><a href="#portfolio-start">UX Portfolio</a></div>
-		<div class="nav-right nav-text"><a href="#development">Development</a></div>
+		<div class="nav-left nav-text">
+			<a href="#portfolio-start" 
+			>
+					UX Portfolio
+			</a>
+		</div>
+		<div class="nav-right nav-text">
+			<a href="#development"nt
+				onclick="trackClickedLink('development')">
+					Development
+			</a>
+		</div>
 	</div>
 
 	<div class="portfolio-wrapper" id="portfolio-start">
@@ -92,7 +111,7 @@
 						</a>
 					</div>
 					<div class="img-right img-too-long">
-						<img src="img/main/main.png" class="main-img">
+						<img src="img/main/main.jpg" class="main-img">
 					</div>
 				</div>
 			</div>
@@ -208,6 +227,6 @@
 	</div>
 
 	<a href="javascript:" id="return-to-top" title="Top of Page"><i class="fa fa-arrow-up"></i></a>
-<script type="text/javascript" src="../bundle.js"></script></body>
+<script type="text/javascript" src="../vendor~main.bundle.js"></script><script type="text/javascript" src="../bundle.js"></script></body>
 
 </html>

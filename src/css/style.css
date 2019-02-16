@@ -1,21 +1,6 @@
 /* imported for mobile use */
 @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,500,700|Open+Sans:400,600);
 
-html {
-    height: 100%;
-}
-
-
-body {
-	color: #323232;
-	font-family: 'Open Sans', sans-serif;
-	height: 100%;
-	margin:0;
-	padding:0;
-    /*overflow: hidden;*/
-    width: 100%;
-  }
-
  /*  blog */
  .fix-fix{
   position:static;

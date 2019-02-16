@@ -33,7 +33,19 @@ module.exports = {
           loader: 'file-loader',
         }
       ] 
-  }, 
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        vendor: {
+            chunks: 'all',
+            test: /node_modules/
+        }
+    }
+    }
+  },
   plugins: [
     //will automatically inject bundle js into ./dist/index.html
     new HTMLWebpackPlugin({

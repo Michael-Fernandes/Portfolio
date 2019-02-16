@@ -6,6 +6,7 @@ body{
 	margin: 0;
 	padding: 0;
 	color: #302e2d;/* black */
+	overflow:hidden;
 }
 
 
@@ -370,9 +371,9 @@ header>ul{
 
 .sq-button{
 	border-radius: 4px;
-    background-color: white;
-    border: 2px solid black;
-	color: #FFFFFF;
+	background-color: white;
+	color:#302e2d;
+    border: 2px solid #302e2d;
 	cursor: pointer;
 	display:inline-block;
 	font-size: 12px;
@@ -390,26 +391,28 @@ header>ul{
   transition: 0.5s;
 }
 
-.sq-button span:after {
+.sq-button >span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -10px;
   transition: 0.5s;
+  color: orange;
 }
 
-.sq-button:hover span {
+.sq-button:hover >span {
   padding-right: 15px;
 }
 
-.sq-button:hover span:after {
+.sq-button:hover >span:after {
   opacity: 1;
   right: 0;
 }
 
 .sq-button:hover{
-	background-color:#191919;
+	background-color: #302e2d;
+	color: white;
 }
 
 .li-button >a>i,{
@@ -477,15 +480,6 @@ figcaption {
 }.caid-button:hover{
 	color: orange;
 
-	background-color: white;
-}
-
-.lookbook-button, .volunteer-button{
-	color: white;
-	background-color: #302e2d;
-	border: 2px solid #302e2d;
-}.lookbook-button:hover,.volunteer-button:hover{
-	color: #302e2d;
 	background-color: white;
 }
 
